@@ -1,0 +1,34 @@
+<!-- admin-signup.html -->
+<div class="container">
+  <h1>Admin Signup</h1>
+  <div class="options">
+    <form [formGroup]="adminSignupForm" (ngSubmit)="onSubmit()">
+      <div>
+        <label for="name">Name:</label>
+        <input id="name" formControlName="name" type="text">
+      </div>
+
+      <div>
+        <label for="aadharNumber">Aadhar Number:</label>
+        <input id="aadharNumber" formControlName="aadharNumber" type="text">
+      </div>
+
+
+      <div>
+        <label for="phoneNumber">Phone Number:</label>
+        <input id="phoneNumber" formControlName="phoneNumber" type="tel">
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <input id="email" formControlName="email" type="email">
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input id="password" formControlName="password" type="password">
+      </div>
+
+      <button type="submit" [disabled]="adminSignupForm.invalid" class="signup-button">Signup</button>
+    </form>
+  </div>
+</div>

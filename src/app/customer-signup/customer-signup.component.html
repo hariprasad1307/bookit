@@ -1,0 +1,42 @@
+<div class="container">
+  <h1>Customer Signup</h1>
+  <div class="options">
+    <form [formGroup]="customerSignupForm" (ngSubmit)="onSubmit()">
+      <div>
+        <label for="name">Name:</label>
+        <input id="name" formControlName="name" type="text">
+      </div>
+
+      <div>
+        <label for="phoneNumber">Phone Number:</label>
+        <input id="phoneNumber" formControlName="phoneNumber" type="tel">
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <input id="email" formControlName="email" type="email">
+      </div>
+
+      <div>
+        <label for="age">Age:</label>
+        <input id="age" formControlName="age" type="number">
+      </div>
+
+      <div>
+        <label for="gender">Gender:</label>
+        <select id="gender" formControlName="gender" class="gender-select">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="password">Password:</label>
+        <input id="password" formControlName="password" type="password">
+      </div>
+
+      <button type="submit" [disabled]="customerSignupForm.invalid" class="signup-button">Signup</button>
+    </form>
+  </div>
+</div>

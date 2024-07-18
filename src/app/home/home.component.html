@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookIt - Your Ultimate Bus Ticket Booking Solution</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .nav-links {
+      list-style: none;
+      padding: 0;
+      display: flex;
+    }
+
+    .nav-links li {
+      margin-left: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .main-content {
+      padding: 20px;
+    }
+
+    .welcome-section {
+      text-align: center;
+      background-color: #fff;
+      padding: 50px 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .welcome-section h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .welcome-section p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    .cta-button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .cta-button:hover {
+      background-color: #0056b3;
+    }
+
+    .features-section {
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .features-section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .features {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .feature {
+      background-color: #f4f4f4;
+      padding: 20px;
+      flex: 1;
+      margin: 0 10px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .feature h3 {
+      margin-bottom: 10px;
+    }
+
+    .overview-section {
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .overview-section h2,
+    .overview-section h3 {
+      margin-top: 0;
+    }
+
+    .overview-section ul,
+    .overview-section ol {
+      padding-left: 20px;
+    }
+
+    .overview-section ul li,
+    .overview-section ol li {
+      margin-bottom: 10px;
+    }
+
+    .footer {
+      text-align: center;
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  
+
+  <main class="main-content">
+    <section class="welcome-section">
+      <h1>Welcome to BookIt</h1>
+      <p>Your ultimate solution for hassle-free bus ticket booking.</p>
+      <button class="cta-button" routerLink="/customer-login">Book Now</button>
+    </section>
+
+    <section class="features-section">
+      <h2>Our Services</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>Easy Booking</h3>
+          <p>Book your tickets in just a few clicks.</p>
+        </div>
+        <div class="feature">
+          <h3>Secure Payments</h3>
+          <p>Pay securely through multiple payment options.</p>
+        </div>
+        <div class="feature">
+          <h3>24/7 Support</h3>
+          <p>We are here to help you anytime.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="overview-section">
+      <h2>BookIt Platform Overview</h2>
+      <p>BookIt is a cutting-edge platform designed to simplify the process of booking bus tickets. Whether you're planning a quick getaway or a long journey, BookIt ensures a seamless and hassle-free ticket booking experience. Our platform is built with user-friendliness, security, and reliability in mind, catering to the needs of modern travelers.</p>
+
+      <h3>Key Features</h3>
+      <ul>
+        <li><strong>Easy Booking:</strong> Book your tickets in just a few clicks with a user-friendly interface.</li>
+        <li><strong>Secure Payments:</strong> Multiple payment options and secure payment gateways.</li>
+        <li><strong>24/7 Support:</strong> Dedicated customer support available around the clock.</li>
+        <li><strong>Wide Network Coverage:</strong> Access to a vast network of bus operators and routes.</li>
+        <li><strong>Transparent Pricing:</strong> Clear and transparent pricing with no hidden charges.</li>
+        <li><strong>User Profiles:</strong> Personalized user profiles for a faster booking experience.</li>
+        <li><strong>Mobile App:</strong> Book tickets on-the-go with our mobile app.</li>
+      </ul>
+
+      <h3>How It Works</h3>
+      <ol>
+        <li><strong>Search for Buses:</strong> Enter your origin, destination, and travel date to search for available buses.</li>
+        <li><strong>Select Your Bus:</strong> Choose the bus that best suits your needs.</li>
+        <li><strong>Book Your Seat:</strong> Select your preferred seat(s) and proceed to payment.</li>
+        <li><strong>Make Payment:</strong> Choose your preferred payment method and complete the transaction securely.</li>
+        <li><strong>Travel with Ease:</strong> Present your e-ticket at the time of boarding and enjoy your journey.</li>
+      </ol>
+
+      <h3>Why Choose BookIt?</h3>
+      <ul>
+        <li><strong>Convenience:</strong> Book tickets from the comfort of your home or on-the-go with our mobile app.</li>
+        <li><strong>Reliability:</strong> Trusted by thousands of travelers for a secure and dependable booking experience.</li>
+        <li><strong>Variety:</strong> Extensive options for bus routes, operators, and seating preferences.</li>
+        <li><strong>Support:</strong> Round-the-clock customer support to assist you at every step.</li>
+      </ul>
+
+      <h3>Contact Us</h3>
+      <p>For more information or assistance, please reach out to us:</p>
+      <ul>
+        <li><strong>Email:</strong> support bookit.com</li>
+        <li><strong>Phone:</strong> 1-800-123-4567</li>
+        <li><strong>Live Chat:</strong> Available on our website and mobile app</li>
+      </ul>
+
+      <h3>Follow Us</h3>
+      <p>Stay updated with the latest news and offers:</p>
+      <ul>
+        <li><a href="https://facebook.com/bookit">Facebook</a></li>
+        <li><a href="https://twitter.com/bookit">Twitter</a></li>
+        <li><a href="https://instagram.com/bookit">Instagram</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 BookIt. All rights reserved.</p>
+  </footer>
+</body>
+</html>

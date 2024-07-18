@@ -1,0 +1,20 @@
+<div class="container">
+    <h1>Customer Login</h1>
+    <div class="options">
+      <form [formGroup]="customerLoginForm" (ngSubmit)="onSubmit()">
+        <div>
+          <label for="phoneNumber">Phone Number:</label>
+          <input id="phoneNumber" formControlName="phoneNumber" type="tel">
+        </div>
+  
+        <div>
+          <label for="password">Password:</label>
+          <input id="password" formControlName="password" type="password">
+        </div>
+  
+        <button type="submit" [disabled]="customerLoginForm.invalid">Login</button>
+      </form>
+      <p>Don't have an account? <a href="/customer-signup">Signup here</a></p>
+    </div>
+  </div>
+  

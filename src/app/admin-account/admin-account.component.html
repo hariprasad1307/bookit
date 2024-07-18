@@ -1,0 +1,15 @@
+<div class="admin-container">
+  <div class="admin-account">
+    <h2>Welcome, {{ adminName }}</h2>
+    <p>Phone Number: {{ adminPhoneNumber }}</p>
+  </div>
+  
+  
+  <div class="button-container">
+    <button routerLink="new-bus" class="btn">New Bus</button>
+    <button routerLink="modify-bus" class="btn">Modify Bus</button>
+  </div>
+  <div class="content-container">
+    <router-outlet></router-outlet>
+  </div>
+</div>

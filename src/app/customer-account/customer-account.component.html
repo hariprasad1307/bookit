@@ -1,0 +1,45 @@
+<div class="container">
+  <h1>Customer Account</h1>
+  
+  <div class="search-form">
+    <label for="origin">Origin:</label>
+    <input id="origin" [(ngModel)]="origin" type="text">
+
+    <label for="destination">Destination:</label>
+    <input id="destination" [(ngModel)]="destination" type="text">
+    
+    <button (click)="searchBuses()">Search Buses</button>
+  </div>
+
+  <div class="buses-list" *ngIf="buses.length > 0">
+    <h2>Buses Available</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Registration Number</th>
+          <th>Origin</th>
+          <th>Destination</th>
+          <th>Departure Time</th>
+          <th>Arrival Time</th>
+          <th>BUS TYPE</th>
+          <TH>PRICE</TH>
+          <th>Book</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let bus of buses">
+          <td>{{ bus.registrationNumber }}</td>
+          <td>{{ bus.origin }}</td>
+          <td>{{ bus.destination }}</td>
+          <td>{{ bus.departureTime }}</td>
+          <td>{{ bus.arrivalTime }}</td>
+          <td>{{ bus.busType }}</td>
+          <td>{{ bus.price }}</td>
+          <td><button (click)="bookBus(bus)">Book</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="error-message" *ngIf="errorMessage">{{ errorMessage }}</div>
+</div>

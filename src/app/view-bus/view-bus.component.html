@@ -1,0 +1,29 @@
+<div class="container">
+    <h2>View Buses</h2>
+    <div *ngIf="buses.length === 0">No buses available.</div>
+    <div *ngIf="buses.length > 0">
+      <table>
+        <thead>
+          <tr>
+            <th>Registration Number</th>
+            <th>Number of Seats</th>
+            <th>Bus Type</th>
+            <th>Origin</th>
+            <th>Destination</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let bus of buses">
+            <td>{{ bus.registrationNumber }}</td>
+            <td>{{ bus.numberOfSeats }}</td>
+            <td>{{ bus.busType }}</td>
+            <td>{{ bus.origin }}</td>
+            <td>{{ bus.destination }}</td>
+            <td>{{ bus.price }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  

@@ -1,0 +1,30 @@
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end; /* Align links to the right */
+  }
+  
+  nav .nav-links {
+    display: flex;
+  }
+  
+  nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  nav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
